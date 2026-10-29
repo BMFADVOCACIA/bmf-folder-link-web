@@ -21,3 +21,7 @@ A pagina nao consulta API, nao autentica usuarios, nao acessa documentos e nao p
 ## Publicacao (nao autorizada)
 
 Somente depois de autorizacao explicita: Settings > Pages > Deploy from a branch > main > root. Fazer teste live com a pasta de exemplo. Antes disso, manter os arquivos em branch de preparacao.
+
+## Abertura automatica experimental
+
+Ao abrir um link HTTPS de pasta, o navegador tenta acionar `bmf-pasta://` automaticamente. Se o Chrome bloquear a tentativa sem gesto direto do usuario, o botao manual permanece disponivel. A abertura automatica deve ser validada no Chrome real antes de ser considerada garantida.
