@@ -15,8 +15,13 @@
       path.textContent = result.label;
       link.href = result.protocolUrl;
       link.hidden = false;
-      status.textContent = 'Pasta identificada. Clique para abrir no Explorador.';
+      status.textContent = 'Tentando abrir automaticamente. Se nao abrir, clique no botao abaixo.';
       state.dataset.state = 'ready';
+      try {
+        window.location.assign(result.protocolUrl);
+      } catch (_) {
+        // O navegador pode bloquear protocolos externos; o link manual permanece visivel.
+      }
     } catch (error) {
       status.textContent = error.message;
       state.dataset.state = 'error';
