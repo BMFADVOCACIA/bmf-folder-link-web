@@ -1,0 +1,17 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #f5f7fa; color: #182635; display: grid; place-items: center; padding: 1.5rem; }
+main { width: min(100%, 32rem); background: white; border: 1px solid #dde4ea; border-radius: 1rem; padding: 2.1rem; box-shadow: 0 12px 38px #20395113; }
+.brand { font-weight: 800; font-size: .8rem; letter-spacing: .12em; color: #255a78; }
+h1 { font-size: 1.55rem; margin: 1rem 0 .4rem; letter-spacing: -.02em; }
+.intro { color: #5b6d7b; line-height: 1.5; margin: .3rem 0 1.3rem; }
+.box { background: #f4f7fa; border: 1px solid #e0e8ee; border-radius: .6rem; padding: 1rem; margin-bottom: 1.4rem; }
+.kicker { display:block; color: #647988; text-transform: uppercase; font-weight: 700; font-size: .68rem; letter-spacing: .08em; margin-bottom: .45rem; }
+#folder-path { overflow-wrap: anywhere; margin: 0; font-weight: 600; }
+.action { display:block; text-decoration: none; background: #176185; color: white; text-align:center; font-weight:700; border-radius:.6rem; padding: .9rem 1rem; }
+.action:hover, .action:focus-visible { background: #104c6a; }
+.action[hidden] { display:none; }
+#status { font-size: .92rem; line-height:1.5; color: #486273; margin-bottom: 1rem; }
+[data-state="error"] #status { color: #9b3b2e; }
+small { display:block; color: #697987; line-height: 1.55; margin-top:1.2rem; }
+footer { margin-top: 1.5rem; color: #778797; font-size:.77rem; }
